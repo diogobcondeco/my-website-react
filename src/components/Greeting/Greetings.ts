@@ -116,7 +116,7 @@ export const greetings: {
         }
     },
     {
-        lang: "ko",
+        lang: "ko-kr",
         message: {
             EARLY_MORNING: '좋은 아침',
             MORNING: '좋은 아침',
