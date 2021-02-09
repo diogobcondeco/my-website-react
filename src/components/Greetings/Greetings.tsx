@@ -1,36 +1,54 @@
 import React, {useEffect, useState} from 'react';
 import './Greetings.scss';
 import detectBrowserLanguage from 'detect-browser-language';
-
-type typeOfGreetings = {
-    message: string;
-    language: string;
-}
+import { listOfGreetings } from './ListOfGreetings';
 
 const Greetings: React.FC = () => {
-    const [greeting, setGreeting] = useState<typeOfGreetings>({
-        message: "Good Morning",
-        language: "en-US"
-    });
-
-    // const [greeting, setGreeting] = useState<typeOfGreetings>();
+    const [greeting, setGreeting] = useState<string>("Good morning");
 
     useEffect(() => {
-        const localeLanguage: string = detectBrowserLanguage();
-        // setGreeting({
-        //     message: "Bom Dia",
-        //     language: "en-US"
-        // })
-        console.log(greeting)
-        console.log(localeLanguage)
+        const timer = setTimeout(() => {
+            defineCorrectMessage();
+        }, 1000);
+        return () => clearTimeout(timer);
     }, []);
+
+    function isBetween(hour: number, first: number, second: number) {
+        return hour >= first && hour < second;
+    }
     
-    console.log(greeting)
+    function defineCorrectMessage() {
+        const localeLanguage: string = detectBrowserLanguage().toLowerCase();
+        const nowDate: Date = new Date();
+        const nowHour: number = nowDate.getHours();
+        listOfGreetings.forEach((item) => {
+            if (localeLanguage === item.lang.toLowerCase()) {
+                if (isBetween(nowHour, 5, 9)) {
+                    return setGreeting(item.message.EARLY_MORNING);
+                } else if (isBetween(nowHour, 9, 12)) {
+                    return setGreeting(item.message.MORNING);
+                } else if (isBetween(nowHour, 12, 19)) {
+                    return setGreeting(item.message.AFTERNOON);
+                } else {
+                    return setGreeting(item.message.EVENING);
+                }
+            } else {
+                if (isBetween(nowHour, 5, 9)) {
+                    return setGreeting("Hello early bird");
+                } else if (isBetween(nowHour, 9, 12)) {
+                    return setGreeting("Good morning");
+                } else if (isBetween(nowHour, 12, 19)) {
+                    return setGreeting("Good afternoon");
+                } else {
+                    return setGreeting("Good evening");
+                }
+            }
+        });
+    }
     
     return (
         <div>
-            <h1 className="title">{ greeting.message },</h1>
-            {/*<h1 className="title">{ detectBrowserLanguage() }</h1>*/}
+            <h1 className="title">{ greeting },</h1>
         </div>
     )
 }
