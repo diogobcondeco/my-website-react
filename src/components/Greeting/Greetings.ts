@@ -8,7 +8,7 @@ export const greetings: {
     } 
 }[] = [
     {
-        lang: "en-US",
+        lang: "en-us",
         message: {
             EARLY_MORNING: "Hello early bird",
             MORNING: "Good Morning",
@@ -35,7 +35,7 @@ export const greetings: {
         }
     },
     {
-        lang: "de",
+        lang: "de-de",
         message: {
             EARLY_MORNING: 'Guten Morgen',
             MORNING: 'Guten Morgen',
@@ -44,7 +44,7 @@ export const greetings: {
         }
     },
     {
-        lang: "es",
+        lang: "es-es",
         message: {
             EARLY_MORNING: 'Buenos días',
             MORNING: 'Buenos días',
@@ -53,7 +53,7 @@ export const greetings: {
         }
     },
     {
-        lang: "fr",
+        lang: "fr-fr",
         message: {
             EARLY_MORNING: 'Bonjour',
             MORNING: 'Bonjour',
@@ -62,7 +62,7 @@ export const greetings: {
         }
     },
     {
-        lang: "it",
+        lang: "it-it",
         message: {
             EARLY_MORNING: 'Buongiorno',
             MORNING: 'Buongiorno',
@@ -71,7 +71,7 @@ export const greetings: {
         }
     },
     {
-        lang: "de_CH",
+        lang: "de_ch",
         message: {
             EARLY_MORNING: 'Guete Morge',
             MORNING: 'Guete Morge',
@@ -89,7 +89,7 @@ export const greetings: {
         }
     },
     {
-        lang: "zh",
+        lang: "zh-cn",
         message: {
             EARLY_MORNING: '早上好',
             MORNING: '早上好',
@@ -123,14 +123,5 @@ export const greetings: {
             AFTERNOON: '안녕하세요',
             EVENING: '안녕하세요'
         }
-    },
-    {
-        lang: "ar",
-        message: {
-            EARLY_MORNING: 'sabah alkhyr',
-            MORNING: 'sabah alkhyr',
-            AFTERNOON: "masa' alkhayr",
-            EVENING: "masa' alkhayr"
-        }
-    },
+    }
 ];
