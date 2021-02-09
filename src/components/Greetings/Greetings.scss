@@ -1,0 +1,12 @@
+@import "../../styles/colors";
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: $title-light-color;
+
+    @media (min-width: 600px) {
+        font-size: 3rem;
+    }
+}
