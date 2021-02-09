@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.scss';
-import Greetings from './components/Greetings/Greetings';
+import Greeting from './components/Greeting/Greeting';
 
 function App() {
     return (
         <div className="App">
             <div className="container content-box">
-                <Greetings />
+                <Greeting />
                 <h2 className="subtitle">
                     I'm Diogo, a Front End Developer that loves to<span className="whiteSpace"> </span>
                     <a href="https://github.com/diogobcondeco" target="_blank" rel="noreferrer">

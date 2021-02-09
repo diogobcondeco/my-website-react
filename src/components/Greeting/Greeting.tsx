@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import './Greetings.scss';
+import './Greeting.scss';
 import detectBrowserLanguage from 'detect-browser-language';
-import { listOfGreetings } from './ListOfGreetings';
+import { greetings } from './Greetings';
 
-const Greetings: React.FC = () => {
-    const [greeting, setGreeting] = useState<string>("Good morning");
+const Greeting: React.FC = () => {
+    const [greeting, setGreeting] = useState<string>("Hello");
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -21,7 +21,7 @@ const Greetings: React.FC = () => {
         const localeLanguage: string = detectBrowserLanguage().toLowerCase();
         const nowDate: Date = new Date();
         const nowHour: number = nowDate.getHours();
-        listOfGreetings.forEach((item) => {
+        greetings.forEach((item) => {
             if (localeLanguage === item.lang.toLowerCase()) {
                 if (isBetween(nowHour, 5, 9)) {
                     return setGreeting(item.message.EARLY_MORNING);
@@ -39,7 +39,7 @@ const Greetings: React.FC = () => {
                     return setGreeting("Good morning");
                 } else if (isBetween(nowHour, 12, 19)) {
                     return setGreeting("Good afternoon");
-                } else {
+                } else if (isBetween(nowHour, 19, 9)) {
                     return setGreeting("Good evening");
                 }
             }
@@ -53,4 +53,4 @@ const Greetings: React.FC = () => {
     )
 }
 
-export default Greetings;
+export default Greeting;

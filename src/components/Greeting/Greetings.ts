@@ -1,4 +1,4 @@
-export const listOfGreetings: {
+export const greetings: {
     lang: string; 
     message: {
         MORNING: string; 
@@ -17,7 +17,7 @@ export const listOfGreetings: {
         }
     },
     {
-        lang: "pt",
+        lang: "pt-pt",
         message: {
             EARLY_MORNING: 'Bom dia',
             MORNING: 'Bom dia',
