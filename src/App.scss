@@ -9,6 +9,7 @@ p {
 }
 
 .container {
+    box-sizing: border-box;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;    
@@ -47,7 +48,7 @@ p {
 
 .title {
     font-size: 2.2rem;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 30px;
     color: $title-light-color;
     
@@ -58,7 +59,7 @@ p {
 
 .subtitle {
     font-size: 1.8rem;
-    font-weight: 4;
+    font-weight: 300;
     margin-bottom: 20px;
     margin-top: 0;
     line-height: 2.25rem;
