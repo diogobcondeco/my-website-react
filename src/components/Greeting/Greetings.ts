@@ -71,15 +71,6 @@ export const greetings: {
         }
     },
     {
-        lang: "de_ch",
-        message: {
-            EARLY_MORNING: 'Guete Morge',
-            MORNING: 'Guete Morge',
-            AFTERNOON: 'Guete Nami',
-            EVENING: 'Guete Abe'
-        }
-    },
-    {
         lang: "ja",
         message: {
             EARLY_MORNING: 'おはようございます',
