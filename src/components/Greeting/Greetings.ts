@@ -35,7 +35,7 @@ export const greetings: {
         }
     },
     {
-        lang: "de-de",
+        lang: "de",
         message: {
             EARLY_MORNING: 'Guten Morgen',
             MORNING: 'Guten Morgen',
