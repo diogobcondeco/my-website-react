@@ -53,7 +53,7 @@ export const greetings: {
         }
     },
     {
-        lang: "fr-fr",
+        lang: "fr",
         message: {
             EARLY_MORNING: 'Bonjour',
             MORNING: 'Bonjour',
