@@ -98,7 +98,7 @@ export const greetings: {
         }
     },
     {
-        lang: "ru",
+        lang: "ru-ru",
         message: {
             EARLY_MORNING: 'доброе утро',
             MORNING: 'доброе утро',
