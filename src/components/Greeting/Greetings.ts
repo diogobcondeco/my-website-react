@@ -107,7 +107,7 @@ export const greetings: {
         }
     },
     {
-        lang: "el",
+        lang: "el-gr",
         message: {
             EARLY_MORNING: 'Καλημέρα',
             MORNING: 'Καλημέρα',
