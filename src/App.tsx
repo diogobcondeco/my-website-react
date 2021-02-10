@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.scss';
+import Greeting from './components/Greeting/Greeting';
 
 function App() {
     return (
         <div className="App">
             <div className="container content-box">
-                <h1 className="title">Hello, I'm Diogo!</h1>
+                <Greeting />
                 <h2 className="subtitle">
-                    A Front End Developer that loves to<span className="whiteSpace"> </span>
+                    I'm a Front End Developer that loves to<span className="whiteSpace"> </span>
                     <a href="https://github.com/diogobcondeco" target="_blank" rel="noreferrer">
                         <span className="content">build</span>
                     </a><span className="whiteSpace"> </span>things.
