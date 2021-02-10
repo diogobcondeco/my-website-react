@@ -8,7 +8,7 @@ function App() {
             <div className="container content-box">
                 <Greeting />
                 <h2 className="subtitle">
-                    I'm Diogo, a Front End Developer that loves to<span className="whiteSpace"> </span>
+                    I'm a Front End Developer that loves to<span className="whiteSpace"> </span>
                     <a href="https://github.com/diogobcondeco" target="_blank" rel="noreferrer">
                         <span className="content">build</span>
                     </a><span className="whiteSpace"> </span>things.

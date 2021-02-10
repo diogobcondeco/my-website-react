@@ -1,15 +1,18 @@
 import React, {useEffect, useState} from 'react';
 import './Greeting.scss';
 import detectBrowserLanguage from 'detect-browser-language';
+import { SwitchTransition, CSSTransition } from 'react-transition-group';
 import { greetings } from './Greetings';
 
 const Greeting: React.FC = () => {
-    const [greeting, setGreeting] = useState<string>("Hello");
+    const [greeting, setGreeting] = useState<string>("");
+    const [showSecondGreeting, setShowSecondGreeting] = useState<boolean>(false);
 
     useEffect(() => {
         const timer = setTimeout(() => {
             defineCorrectMessage();
-        }, 1000);
+            setShowSecondGreeting(true);
+        }, 2000);
         return () => clearTimeout(timer);
     }, []);
 
@@ -48,7 +51,23 @@ const Greeting: React.FC = () => {
     
     return (
         <div>
-            <h1 className="title">{ greeting },</h1>
+            <h1 className="title">
+                <SwitchTransition mode="out-in">
+                    <CSSTransition
+                        key={showSecondGreeting}
+                        addEndListener={(node: { addEventListener: (arg0: string, arg1: any, arg2: boolean) => void; }, done: any) => {
+                            node.addEventListener("transitionend", done, false);
+                        }}
+                        classNames="fade"
+                    >
+                        <div>
+                            <span className="greeting">
+                                {!showSecondGreeting ? "Hello," : greeting + ","}
+                            </span> Diogo here.
+                        </div>
+                    </CSSTransition>
+                </SwitchTransition>
+            </h1>
         </div>
     )
 }

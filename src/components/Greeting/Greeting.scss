@@ -10,3 +10,25 @@
         font-size: 3rem;
     }
 }
+
+// Transition Greeting
+.fade-enter .greeting {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.fade-enter-active .greeting {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.fade-exit .greeting {
+    opacity: 1;
+    transform: translateX(0%);
+}
+.fade-exit-active .greeting {
+    opacity: 0;
+    transform: translateX(100%);
+}
+.fade-enter-active .greeting,
+.fade-exit-active .greeting {
+    transition: opacity 500ms, transform 1000ms;
+}
