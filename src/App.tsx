@@ -14,28 +14,24 @@ function App() {
                     </a>things.
                 </h2>
                 <p className="paragraph">
-                    Very motivated about<span className="whiteSpace"> </span>
                     <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
                         <span className="highlight">React</span><span className="whiteSpace"> </span>
-                    </a>& admired with<span className="whiteSpace"> </span>
+                    </a>enthusiast &<span className="whiteSpace"> </span>
                     <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
-                        <span className="highlight">Vue</span>
-                    </a>.
+                        <span className="highlight">Vue</span><span className="whiteSpace"> </span>
+                    </a>admirer.
                 </p>
                 <p className="paragraph">
                     Goals of becoming a Senior<span className="whiteSpace"> </span>
                     <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
                         <span className="highlight">React</span><span className="whiteSpace"> </span>
                     </a>Developer & contribute to open-source projects.
-                </p>
-                <p className="paragraph">
-                    Speaker of english, português & español.
-                </p>
+                </p>    
                 <p className="paragraph">
                     Learning<span className="whiteSpace"> </span>
                     <a href="https://www.howtostudykorean.com/" target="_blank" rel="noreferrer">
-                        <span className="highlight">한국어</span><span className="whiteSpace"> </span>
-                    </a>& hopefully more languages soon.
+                        <span className="highlight">한국어</span>,<span className="whiteSpace"> </span>
+                    </a>if you speak it, feel free to message me, I will appreciate some help.
                 </p>
                 <p className="paragraph">
                     You can follow on<span className="whiteSpace"> </span>
