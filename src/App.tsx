@@ -32,7 +32,7 @@ function App() {
                     Speaker of english, português & español.
                 </p>
                 <p className="paragraph">
-                    Hopefully 한국어, 日本人, 中文, français & italiano soon.
+                    Learning 한국어 & hopefully more soon.
                 </p>
                 <p className="paragraph">
                     You can follow on<span className="whiteSpace"> </span>
