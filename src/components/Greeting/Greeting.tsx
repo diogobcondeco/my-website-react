@@ -33,7 +33,7 @@ const Greeting: React.FC = () => {
                 } else if (isBetween(nowHour, 12, 19)) {
                     return setGreeting(item.message.AFTERNOON);
                 } else {
-                    return setGreeting(item.message.EVENING);
+                    return setGreeting(item.message.NIGHT);
                 }
             } else {
                 if (isBetween(nowHour, 5, 9)) {
@@ -43,7 +43,7 @@ const Greeting: React.FC = () => {
                 } else if (isBetween(nowHour, 12, 19)) {
                     return setGreeting("Good afternoon");
                 } else if (isBetween(nowHour, 19, 9)) {
-                    return setGreeting("Good evening");
+                    return setGreeting("Good night");
                 }
             }
         });

@@ -1,19 +1,19 @@
 export const greetings: {
     lang: string; 
     message: {
-        MORNING: string; 
-        EARLY_MORNING: string; 
-        EVENING: string; 
-        AFTERNOON: string 
+        EARLY_MORNING: string;
+        MORNING: string;
+        AFTERNOON: string
+        NIGHT: string;
     } 
 }[] = [
     {
         lang: "en-us",
         message: {
             EARLY_MORNING: "Hello early bird",
-            MORNING: "Good Morning",
-            AFTERNOON: "Good Evening",
-            EVENING: "Good evening"
+            MORNING: "Good morning",
+            AFTERNOON: "Good afternoon",
+            NIGHT: "Good night"
         }
     },
     {
@@ -22,7 +22,7 @@ export const greetings: {
             EARLY_MORNING: 'Bom dia',
             MORNING: 'Bom dia',
             AFTERNOON: 'Boa tarde',
-            EVENING: 'Boa noite',
+            NIGHT: 'Boa noite',
         }
     },
     {
@@ -31,16 +31,16 @@ export const greetings: {
             EARLY_MORNING: 'Dzień dobry',
             MORNING: 'Dzień dobry',
             AFTERNOON: 'Dzień dobry',
-            EVENING: 'Dobry wieczór'
+            NIGHT: 'Dobranoc'
         }
     },
     {
         lang: "de",
         message: {
-            EARLY_MORNING: 'Guten Morgen',
-            MORNING: 'Guten Morgen',
-            AFTERNOON: 'Guten Tag',
-            EVENING: 'Guten Abend'
+            EARLY_MORNING: 'Guten morgen',
+            MORNING: 'Guten morgen',
+            AFTERNOON: 'Guten nachmittag',
+            NIGHT: 'Gute nacht'
         }
     },
     {
@@ -49,7 +49,7 @@ export const greetings: {
             EARLY_MORNING: 'Buenos días',
             MORNING: 'Buenos días',
             AFTERNOON: 'Buenas tardes',
-            EVENING: 'Buena noches'
+            NIGHT: 'Buena noches'
         }
     },
     {
@@ -58,7 +58,7 @@ export const greetings: {
             EARLY_MORNING: 'Bonjour',
             MORNING: 'Bonjour',
             AFTERNOON: 'Bonne après-midi',
-            EVENING: 'Bonsoir'
+            NIGHT: 'Bonne nuit'
         }
     },
     {
@@ -67,7 +67,7 @@ export const greetings: {
             EARLY_MORNING: 'Buongiorno',
             MORNING: 'Buongiorno',
             AFTERNOON: 'Buon pomeriggio',
-            EVENING: 'Buonasera'
+            NIGHT: 'Buona notte'
         }
     },
     {
@@ -76,25 +76,25 @@ export const greetings: {
             EARLY_MORNING: 'おはようございます',
             MORNING: 'おはようございます',
             AFTERNOON: 'こんにちは',
-            EVENING: 'こんばんは'
+            NIGHT: 'おやすみ'
         }
     },
     {
         lang: "zh-cn",
         message: {
-            EARLY_MORNING: '早上好',
-            MORNING: '早上好',
+            EARLY_MORNING: '早安',
+            MORNING: '早安',
             AFTERNOON: '下午好',
-            EVENING: '晚上好'
+            NIGHT: '晚安'
         }
     },
     {
         lang: "ru-ru",
         message: {
-            EARLY_MORNING: 'доброе утро',
+            EARLY_MORNING: 'Доброе утро',
             MORNING: 'доброе утро',
             AFTERNOON: 'Добрый день',
-            EVENING: 'Добрый вечер'
+            NIGHT: 'Доброй ночи'
         }
     },
     {
@@ -103,7 +103,7 @@ export const greetings: {
             EARLY_MORNING: 'Καλημέρα',
             MORNING: 'Καλημέρα',
             AFTERNOON: 'καλό απόγευμα',
-            EVENING: 'Καλό απόγευμα'
+            NIGHT: 'Καληνυχτα'
         }
     },
     {
@@ -112,7 +112,7 @@ export const greetings: {
             EARLY_MORNING: '좋은 아침',
             MORNING: '좋은 아침',
             AFTERNOON: '안녕하세요',
-            EVENING: '안녕하세요'
+            NIGHT: '안녕히 주무세요'
         }
     }
 ];
