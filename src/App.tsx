@@ -8,46 +8,46 @@ function App() {
             <div className="container content-box">
                 <Greeting />
                 <h2 className="subtitle">
-                    I'm a Front End Developer that loves to<span className="whiteSpace"> </span>
+                    I'm a Frontend Developer that loves to<span className="whiteSpace"> </span>
                     <a href="https://github.com/diogobcondeco" target="_blank" rel="noreferrer">
-                        <span className="content">build</span>
-                    </a><span className="whiteSpace"> </span>things.
+                        <span className="highlight">build</span><span className="whiteSpace"> </span>
+                    </a>things.
                 </h2>
                 <p className="paragraph">
-                    Passionate about<span className="whiteSpace"> </span>
+                    Very motivated about<span className="whiteSpace"> </span>
                     <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-                        <span className="content">React</span>
-                    </a><span className="whiteSpace"> </span>&<span className="whiteSpace"> </span>
+                        <span className="highlight">React</span><span className="whiteSpace"> </span>
+                    </a>& admired with<span className="whiteSpace"> </span>
                     <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
-                        <span className="content">Vue</span>
+                        <span className="highlight">Vue</span>
                     </a>.
                 </p>
                 <p className="paragraph">
-                    Goals of mastering<span className="whiteSpace"> </span>
+                    Goals of becoming a Senior<span className="whiteSpace"> </span>
                     <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-                        <span className="content">React</span>
-                    </a><span className="whiteSpace"> </span>& contributing to it.
+                        <span className="highlight">React</span><span className="whiteSpace"> </span>
+                    </a>Developer & contribute to open-source projects.
                 </p>
                 <p className="paragraph">
-                    Dreaming about traveling the 🌍 while 💻 remotely.
+                    Speaker of english, português & español.
                 </p>
                 <p className="paragraph">
-                    Lover of 🍔🍕🍣✈🚐.
+                    Hopefully 한국어, 日本人, 中文, français & italiano soon.
                 </p>
                 <p className="paragraph">
                     You can follow on<span className="whiteSpace"> </span>
                     <a href="https://twitter.com/diogobcondeco" target="_blank" rel="noreferrer">
-                        <span className="content">Twitter</span>
+                        <span className="highlight">Twitter</span>
                     </a>,<span className="whiteSpace"> </span>
                     <a href="https://github.com/diogobcondeco" target="_blank" rel="noreferrer">
-                        <span className="content">GitHub</span>
-                    </a><span className="whiteSpace"> </span>&<span className="whiteSpace"> </span>
+                        <span className="highlight">GitHub</span><span className="whiteSpace"> </span>
+                    </a>&<span className="whiteSpace"> </span>
                     <a href="https://www.linkedin.com/in/diogobcondeco/" target="_blank" rel="noreferrer">
-                        <span className="content">LinkedIn</span>
+                        <span className="highlight">LinkedIn</span>
                     </a>.
                 </p>
                 <p className="paragraph">
-                    <a href="mailto:diogobcondeco@gmail.com">↳ Talk to me.</a>
+                    <a href="mailto:diogobcondeco@gmail.com" className="highlight">↳ Talk to me.</a>
                 </p>
             </div>
         </div>
