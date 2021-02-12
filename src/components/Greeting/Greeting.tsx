@@ -4,7 +4,7 @@ import detectBrowserLanguage from 'detect-browser-language';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
 import { greetings } from './Greetings';
 
-interface Greeting {
+interface GreetingItem {
     lang: string;
     message: {
         EARLY_MORNING: string;
@@ -30,7 +30,7 @@ const Greeting: React.FC = () => {
         return hour >= first && hour < second;
     }
     
-    function selectTime(salutation: Greeting, hour: number) {
+    function selectTime(salutation: GreetingItem, hour: number) {
         if (salutation === undefined || salutation === null) {
             return setGreeting("Hello");
         } else if (isBetween(hour, 5, 9)) {
