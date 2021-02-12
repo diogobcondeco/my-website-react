@@ -4,6 +4,16 @@ import detectBrowserLanguage from 'detect-browser-language';
 import { SwitchTransition, CSSTransition } from 'react-transition-group';
 import { greetings } from './Greetings';
 
+interface Greeting {
+    lang: string;
+    message: {
+        EARLY_MORNING: string;
+        MORNING: string;
+        AFTERNOON: string;
+        NIGHT: string;
+    }
+}
+
 const Greeting: React.FC = () => {
     const [greeting, setGreeting] = useState<string>("");
     const [showSecondGreeting, setShowSecondGreeting] = useState<boolean>(false);
@@ -20,33 +30,26 @@ const Greeting: React.FC = () => {
         return hour >= first && hour < second;
     }
     
+    function selectTime(salutation: Greeting, hour: number) {
+        if (salutation === undefined || salutation === null) {
+            return setGreeting("Hello");
+        } else if (isBetween(hour, 5, 9)) {
+            return setGreeting(salutation.message.EARLY_MORNING);
+        } else if (isBetween(hour, 9, 12)) {
+            return setGreeting(salutation.message.MORNING);
+        } else if (isBetween(hour, 12, 19)) {
+            return setGreeting(salutation.message.AFTERNOON);
+        } else {
+            return setGreeting(salutation.message.NIGHT);
+        }
+    }
+    
     function defineCorrectMessage() {
         const localeLanguage: string = detectBrowserLanguage().toLowerCase();
         const nowDate: Date = new Date();
         const nowHour: number = nowDate.getHours();
-        greetings.forEach((item) => {
-            if (localeLanguage === item.lang.toLowerCase()) {
-                if (isBetween(nowHour, 5, 9)) {
-                    return setGreeting(item.message.EARLY_MORNING);
-                } else if (isBetween(nowHour, 9, 12)) {
-                    return setGreeting(item.message.MORNING);
-                } else if (isBetween(nowHour, 12, 19)) {
-                    return setGreeting(item.message.AFTERNOON);
-                } else {
-                    return setGreeting(item.message.NIGHT);
-                }
-            } else {
-                if (isBetween(nowHour, 5, 9)) {
-                    return setGreeting("Hello early bird");
-                } else if (isBetween(nowHour, 9, 12)) {
-                    return setGreeting("Good morning");
-                } else if (isBetween(nowHour, 12, 19)) {
-                    return setGreeting("Good afternoon");
-                } else if (isBetween(nowHour, 19, 9)) {
-                    return setGreeting("Good night");
-                }
-            }
-        });
+        const selectedGreeting = greetings.filter(item => localeLanguage === item.lang.toLowerCase());
+        selectTime(selectedGreeting[0], nowHour);
     }
     
     return (
