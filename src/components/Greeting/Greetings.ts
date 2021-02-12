@@ -57,7 +57,7 @@ export const greetings: {
         message: {
             EARLY_MORNING: 'Bonjour',
             MORNING: 'Bonjour',
-            AFTERNOON: 'Bonne après-midi',
+            AFTERNOON: 'Bon après-midi',
             NIGHT: 'Bonne nuit'
         }
     },
