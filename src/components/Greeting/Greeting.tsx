@@ -48,7 +48,9 @@ const Greeting: React.FC = () => {
         const localeLanguage: string = detectBrowserLanguage().toLowerCase();
         const nowDate: Date = new Date();
         const nowHour: number = nowDate.getHours();
-        const selectedGreeting = greetings.filter(item => localeLanguage === item.lang.toLowerCase());
+        const selectedGreeting = greetings.filter(
+            item => localeLanguage.substring(0, 2) === item.lang.substring(0, 2)
+        );
         selectTime(selectedGreeting[0], nowHour);
     }
     
