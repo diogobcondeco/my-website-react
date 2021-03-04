@@ -9,7 +9,7 @@ function App() {
                 <Greeting />
                 <h2 className="subtitle">
                     I'm a Frontend Developer that loves to<span className="whiteSpace"> </span>
-                    <a href="https://github.com/diogobcondeco" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/diogothedev" target="_blank" rel="noreferrer">
                         <span className="highlight">build</span><span className="whiteSpace"> </span>
                     </a>things.
                 </h2>
@@ -35,10 +35,10 @@ function App() {
                 </p>
                 <p className="paragraph">
                     You can follow on<span className="whiteSpace"> </span>
-                    <a href="https://twitter.com/diogobcondeco" target="_blank" rel="noreferrer">
+                    <a href="https://twitter.com/diogothedev" target="_blank" rel="noreferrer">
                         <span className="highlight">Twitter</span>
                     </a>,<span className="whiteSpace"> </span>
-                    <a href="https://github.com/diogobcondeco" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/diogothedev" target="_blank" rel="noreferrer">
                         <span className="highlight">GitHub</span><span className="whiteSpace"> </span>
                     </a>&<span className="whiteSpace"> </span>
                     <a href="https://www.linkedin.com/in/diogobcondeco/" target="_blank" rel="noreferrer">
@@ -46,7 +46,7 @@ function App() {
                     </a>.
                 </p>
                 <p className="paragraph">
-                    <a href="mailto:diogobcondeco@gmail.com" className="highlight">↳ Talk to me.</a>
+                    <a href="mailto:diogothedev@gmail.com" className="highlight">↳ Talk to me.</a>
                 </p>
             </div>
         </div>
